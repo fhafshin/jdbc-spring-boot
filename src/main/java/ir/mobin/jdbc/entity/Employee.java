@@ -2,6 +2,14 @@ package ir.mobin.jdbc.entity;
 
 public class Employee {
 
+    public Employee(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    public Employee() {
+    }
+
     private  int id;
     private String firstName;
     private String lastName;

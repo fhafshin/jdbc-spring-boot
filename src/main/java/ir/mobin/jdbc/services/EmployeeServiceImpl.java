@@ -16,4 +16,21 @@ public class EmployeeServiceImpl implements EmployeeService{
     public List<Employee> findAll() {
         return employeeDao.findAll();
     }
+
+    public int insertEmployee(Employee employee) {
+       return employeeDao.insertEmployee(employee);
+    }
+
+    @Override
+    public String updateEmployee(Employee employee) {
+
+                employeeDao.updateEmployee(employee);
+                return "updated";
+    }
+
+    @Override
+    public String deleteEmployee(int employee) {
+        employeeDao.deleteEmployee(employee);
+        return "deleted";
+    }
 }
