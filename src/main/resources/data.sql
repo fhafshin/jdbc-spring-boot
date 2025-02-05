@@ -1,0 +1,1 @@
+INSERT INTO book(id,title,author) values(5,'ffff','sadfsadf')
